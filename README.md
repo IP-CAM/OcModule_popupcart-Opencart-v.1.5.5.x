@@ -1,48 +1,48 @@
-Описание
+Description
 ==================
 
-Модуль для ocStore (opencart) - Всплывающая корзина. Дополнение показывает при покупке товара всплывающее окно с содержимым корзины. 
-Для увеличения продаж добавлен подраздел "С этим товаром покупают", содержимое которого формируется на основе полей "Сопутствующие товары" тех товаров, которые добавлены в корзину.
+Module for ocStore (opencart) - Pop-up cart. The add-on shows a pop-up window with the contents of the cart when purchasing a product.
+To increase sales, added a subsection "Buy with this product", the content of which is formed on the basis of the "Related products" fields of those products that have been added to the cart.
 
-Установка
+Installation
 ====================
 
-Процедура установки следующая:
+The installation procedure is as follows:
 
-1. Скачать модуль.
-2. Загрузить файлы в папку с магазином.
-3. Установить модуль в панели управления.
-4. Добавить "модули" на страницы, где должна появляться корзина, позицию рекомендуется указать "Низ страницы".
-5. Установить необходимые настройки
+1. Download the module.
+2. Upload files to the store folder.
+3. Install the module in the control panel.
+4. Add "modules" to the pages where the basket should appear, it is recommended to specify the position "Bottom of the page".
+5. Set the required settings
 
-Примечание:
+Note:
 
-Для срабатывания по нажатию кнопки "в корзину", модуль присоединяет к ней обработчик. Обнаружение кнопок происходит по специальным правилам. Поэтому, если после установки модуль не реагирует на нажатия, то вероятнее всего 
-1. Модуль не был выведен на нужно странице, для этого достаточно проверить наличие скрипта popupcart.js в ресурсах страницы.
-2. Была изменена стандартная верстка. В этом случае необходимо внести соотв. изменения в правила поиска кнопок в файле popupcart.js
+To be triggered by clicking the "add to cart" button, the module attaches a handler to it. Buttons are detected according to special rules. Therefore, if after installation the module does not respond to pressing, then most likely
+1. The module was not displayed on the required page, for this it is enough to check the presence of the popupcart.js script in the page resources.
+2. The standard layout has been changed. In this case, it is necessary to enter the acc. changes to the rules for finding buttons in the popupcart.js file
 
 
-Особенности
+Features:
 ==================
 
-1. Модуль не изменяет ни одного файла магазина.
-2. Файл с оформлением (popupcart.css)может быть переопределен как и шаблон отображения корзины
-(popupcart/index.tpl , popupcart/load.tpl), достаточно разместить файлы в соотв. папке с текущей темой.
-3. js код выделен в отдельный модуль, определены методы управления этим модулем, поэтому при необходимости
-можно без труда изменить стандартную функциональность.
-4. Закрыть окно можно несколькими разными способами: клавиша ESC, клик по области вокруг окна, клик по крестику в title окна.
+1. The module does not change any store files.
+2. The file with the design (popupcart.css) can be redefined as the cart display template
+(popupcart / index.tpl, popupcart / load.tpl), it is enough to place the files in acc. folder with the current theme.
+3.js code is separated into a separate module, methods for managing this module are defined, therefore, if necessary
+you can easily change the standard functionality.
+4. You can close the window in several different ways: ESC key, click on the area around the window, click on the cross in the window title.
 
-Совместимость ocStore/opencart
+OcStore / opencart compatibility
 =================
-ocStore 1.5.1 - 1.5.5 - есть
-opencart 1.5.* - есть
+ocStore 1.5.1 - 1.5.5 - yes
+opencart 1.5. * - yes
 
-Тестировался на браузерах
+Tested on browsers
 =================
 Chrome
 Firefox
 Opera
 Safari
 
-Примечание:
-Для тестирования брались последние версии браузеров.
+Note:
+The latest versions of browsers were taken for testing. 
